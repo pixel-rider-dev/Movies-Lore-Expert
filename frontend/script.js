@@ -19,7 +19,7 @@ async function sendMessage() {
     chatBox.scrollTop = chatBox.scrollHeight;
 
     try {
-        const response = await fetch('https://movies-lore-expert.onrender.com/chat', {
+        const response = await fetch('https://movies-backend-v2.onrender.com/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ question: question })

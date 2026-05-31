@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies Lore Expert</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 15%;">
+                <div style="text-align: left;">
+                    <h1>🎬 Movies Lore Expert</h1>
+                    <p>Your Personal AI Cinema Guide</p>
+                </div>
+                <button id="download-btn" onclick="downloadChat()" title="Download Recommendations">
+                    <i class="fa-solid fa-file-arrow-down"></i> Save
+                </button>
+            </div>
+        </div>
+
+        <div id="chat-box">
+            <div class="message bot">Welcome! What kind of movie are you looking for today? 🍿</div>
+        </div>
+        
+        <div class="suggestions">
+            <span class="chip" onclick="quickAsk('Suggest a hit 90s classic movie')">🎥 90s Movies</span>
+            <span class="chip" onclick="quickAsk('Best movies from the 2000s')">📼 2000s Hits</span>
+            <span class="chip" onclick="quickAsk('Suggest a good Hollywood movie')">🌟 Hollywood</span>
+            <span class="chip" onclick="quickAsk('Suggest a famous Bollywood movie')">💃 Bollywood</span>
+            <span class="chip" onclick="quickAsk('Suggest a hit Lollywood movie')">🇵🇰 Lollywood</span>
+            <span class="chip" onclick="quickAsk('Suggest a romantic movie')">❤️ Romantic</span>
+            <span class="chip" onclick="quickAsk('Suggest an action packed movie')">💥 Action</span>
+        </div>
+
+        <div class="input-area">
+            <button id="mic-btn" onclick="startVoiceRecognition()" title="Voice Search">🎤</button>
+            <input type="text" id="user-input" placeholder="Ask about movies...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    
+    <!-- PDF GENERATE KARNE KI LIBRARY YAHAN ADD KI HAI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

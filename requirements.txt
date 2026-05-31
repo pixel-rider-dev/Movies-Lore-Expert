@@ -1,0 +1,7 @@
+pandas
+pinecone
+sentence-transformers
+python-dotenv
+fastapi
+uvicorn
+requests

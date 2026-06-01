@@ -1,10 +1,10 @@
 import requests
 import os
 
-API_URL = "https://router.huggingface.co/hf-inference/models/sentence-transformers/all-MiniLM-L6-v2"
+# Explicit feature-extraction URL taake Hugging Face confuse na ho
+API_URL = "https://api-inference.huggingface.co/pipeline/feature-extraction/sentence-transformers/all-MiniLM-L6-v2"
 
 def get_embedding(text: str):
-    # Key ko function ke andar nikalna zaroori hai taake fresh load ho
     hf_key = os.environ.get('HF_API_KEY')
     
     if not hf_key:
@@ -16,5 +16,4 @@ def get_embedding(text: str):
     if response.status_code == 200:
         return response.json()
     else:
-        # Ab agar HF fail hua, toh yeh Pinecone tak jane hi nahi dega aur asal wajah batayega
-        raise ValueError(f"Hugging Face Error Pakra Gaya: {response.text}")
+        raise ValueError(f"Hugging Face Error: {response.text}")

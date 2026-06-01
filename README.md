@@ -1,28 +1,19 @@
-# 🎬 Movies Lore Expert
+# 🎬 Movies Lore Expert - Your Personal AI Cinema Guide
 
-Your Personal AI Cinema Guide! Movies Lore Expert is an intelligent, RAG-based AI chatbot designed to provide personalized, detailed, and highly respectful movie recommendations. It acts as a professional cinematic consultant, offering deep lore and background details for every movie.
+Welcome to **Movies Lore Expert**, an intelligent, AI-powered movie recommendation system designed to be your ultimate cinema companion. Whether you are looking for a romantic 90s hit, an action-packed Hollywood blockbuster, or a classic Bollywood masterpiece, this AI guide has you covered.
 
-## ✨ Features
-* **Smart Recommendations:** Powered by the advanced `llama-3.3-70b-versatile` model via Groq API.
-* **Viva-Safe & Family Friendly:** Strictly filters out 18+ or inappropriate content, ensuring clean and respectful suggestions.
-* **Culturally Tailored:** Communicates in clear Roman Urdu/Minglish, maintaining a polite and structured bullet-point format.
-* **Export Options:** Instantly download your personalized movie recommendations as a cleanly formatted PDF document.
-* **Voice Search:** Integrated speech recognition for hands-free queries.
+## 🚀 What is this project?
+Movies Lore Expert is a Full-Stack AI Chatbot that understands user prompts and suggests movies based on context, mood, and genre. Instead of just doing a basic keyword search, it uses advanced AI embeddings to truly understand what you are looking for.
+
+## ✨ Key Features
+* **Massive Movie Database:** Powered by a rich dataset of **5,000 movies**, ensuring a wide variety of accurate and high-quality recommendations.
+* **Smart Semantic Search:** Uses advanced NLP (Natural Language Processing) to match your conversational queries with the perfect movie.
+* **Blazing Fast AI Responses:** Integrates cutting-edge LLMs to generate conversational, detailed, and engaging replies about movie lore.
+* **Interactive UI:** A sleek, dark-themed frontend with quick-action chips (e.g., '90s Movies', 'Hollywood', 'Bollywood') for a seamless user experience.
 
 ## 🛠️ Tech Stack
-**Frontend:**
-* HTML5, CSS3 (Dark Theme), Vanilla JavaScript
-* `html2pdf.js` for exporting chat histories
-
-**Backend:**
-* Python (FastAPI / Uvicorn)
-* Groq API (LLaMA-3.3-70b) for LLM inferences
-* Pinecone for Vector Database & RAG Architecture
-
-## 🚀 How to Run Locally
-
-### 1. Backend Setup
-1. Open a terminal and navigate to the `backend` directory.
-2. Activate the virtual environment:
-```bash
-   .\venv\Scripts\activate
+* **Frontend:** Deployed on Vercel
+* **Backend:** Python (FastAPI), Deployed on Render
+* **Vector Database:** Pinecone (for fast similarity search)
+* **Embeddings:** Hugging Face (`all-MiniLM-L6-v2`)
+* **LLM Integration:** Groq API
